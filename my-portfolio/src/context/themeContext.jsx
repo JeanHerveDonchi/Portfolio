@@ -1,4 +1,5 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
+import { COLORS } from "../config/constants";
 
 // Create Theme Context
 export const ThemeContext = createContext();
@@ -11,11 +12,11 @@ export const ThemeProvider = ({ children }) => {
     // Apply theme when it changes
     useEffect(() => {
         if (theme === "dark") {
-            document.body.style.backgroundColor = "black";
-            document.body.style.color = "white";
+            document.body.style.backgroundColor = COLORS.darkModeBodyBackground;
+            document.body.style.color = COLORS.darkModeText;
         } else {
-            document.body.style.backgroundColor = "white";
-            document.body.style.color = "black";
+            document.body.style.backgroundColor = COLORS.lightModeBodyBackground;
+            document.body.style.color = COLORS.lightModeText;
         }
         localStorage.setItem("theme", theme);
     }, [theme]);

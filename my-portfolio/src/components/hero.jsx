@@ -5,7 +5,7 @@ const Hero = () => {
      const { darkMode } = useTheme();
 
 return (
-    <section className="text-start py-5" style={{color: darkMode ? COLORS.darkModeText : COLORS.lightModeText}} >
+    <section className="text-start py-5">
         <p>
             {TEXT.greeting}
         </p>

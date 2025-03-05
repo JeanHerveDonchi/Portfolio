@@ -1,3 +1,119 @@
+/* Home */
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: calc(100vh - 50px);
+}
+
+/* Left section (Text + Social Links) */
+.home-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Right section (Avatar) */
+.home-avatar {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+/* RESPONSIVE: Stack image below text on small screens */
+@media (max-width: 992px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        order: 1;
+        text-align: center;
+    }
+
+    .home-avatar {
+        order: 2;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+.about-container {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Left Section */
+.about-text {
+    width: 40vw;
+}
+
+.about-description {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Tech Stack Grid */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Right Section */
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔽 On smaller screens (< 992px) */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    /* Make TechStack full width */
+    .tech-stack {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr); /* Adjust columns for better spacing */
+        gap: 15px;
+    }
+
+    .about-button {
+        margin-top: 20px;
+    }
+}
+
+/* 🔽 On extra small screens (< 576px), make TechStack 1 column */
+@media (max-width: 576px) {
+    .tech-stack {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
 .techstack-container {
     display: flex;
     gap: 20px;
@@ -24,3 +140,137 @@
         transform: translateX(-50%);
     }
 }
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+.project-card {
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--white); 
+    color: var(--black);
+    border: 3px solid var(--primary_blue);
+}
+
+.project-card.dark-theme {
+    background-color: var(--card_darktheme_background);
+    color: var(--card_darktheme_text);
+    border-color: var(--primary_blue_dark); 
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card.dark-theme:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px var(--primary_blue_dark_shadow); 
+}
+
+
+/* Form css and responsiveness */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    padding: 2rem;
+    gap: 1rem;
+  }
+  
+  .contact-text{
+    flex: 1;
+    font-size: 2rem;
+  }
+
+  .contact-text .light {
+    color: var(--black);
+  }
+
+  .contact-text .dark {
+    color: var(--white);
+  }
+
+  .contact-text .color-text{
+    color: var(--primary_blue);
+}
+  
+  .contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: var(--white);
+    color: var(--black);
+  }
+  
+  .contact-form textarea {
+    min-height: 150px;
+    resize: none;
+  }
+  
+  .submit-button {
+    transition: transform 0.3s ease-in-out;
+    background: var(--primary_blue);
+    color: var(--white);
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .button:hover{
+    transform: scale(1.05);
+  }
+  .submit-button:hover {
+    background: var(--primary_blue_contrast);
+  }
+  
+  @media (max-width: 992px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  }
+
+  /*popup message*/
+  .popup-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--card_darktheme_background);
+    color: var(--card_darktheme_text);
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--primary_blue_dark_shadow);
+    font-size: 16px;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+  
+
+

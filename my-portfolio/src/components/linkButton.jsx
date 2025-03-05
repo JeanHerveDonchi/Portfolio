@@ -8,7 +8,7 @@ const LinkButton = ({icon: Icon, url}) => {
          className="link-button"
          aria-label="External Link"
         >
-            <Icon size={24}/>
+            <Icon size={30}/>
         </a>
     );
 };

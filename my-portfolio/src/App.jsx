@@ -5,8 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
-import Projects from './pages/projects';
+import Projects from './pages/Projects';
 import { PROJECTLIST } from './config/constants';
+import ContactForm from './pages/ContactMe';
+import Footer from './pages/Footer';
 
 
 function App() {
@@ -20,16 +22,13 @@ function App() {
       }}>
         <Home />
       </div>
-      <div
-        style={{
-          marginLeft: 0,
-          marginRight: 0
-        }}
-      >
+      <div>
         <AboutMe />
+        <Projects  projects={PROJECTLIST}/>
+        <ContactForm/>
       </div>
       <div>
-        <Projects  projects={PROJECTLIST}/>
+        <Footer/>
       </div>
     </>
   )

@@ -18,10 +18,31 @@ export const LINKS = {
     linkedIn: "https://www.linkedin.com/in/herve-donchi-b93b5b218/"
 }
 
+export const FOOTERLINKS = [
+    { name: "Home", url: "#home" },
+    { name: "About", url: "#about" },
+    { name: "Projects", url: "#projects" },
+    { name: "Contact Me", url: "#contact" },
+    { name: "LinkedIn", url: LINKS.linkedIn },
+    { name: "Email", url: LINKS.email },
+    { name: "GitHub", url: LINKS.github }
+]
+
+export const EMAILJSCREDENTIALS = {
+    emailServiceId: "service_xc7b5hk",
+    templateId: "template_kfdzi3v",
+    publicKey: "oYMz56yuLwd5BOEO2",
+    emailName: "Jean Herve Donchi"
+}
+
 export const COLORS = {
-    darkModeText: "#55E5A4",
-    lightModeText: "#26313",
-    primary: "#55E5A4"
+    darkModeText: "#fff",
+    lightModeText: "#26313F",
+    primary: "blue",
+    darkModeBodyBackground: "#1D1D1D",
+    lightModeBodyBackground: "#fff",
+    cardAndFormDarkThemeBackground: "#292c30",
+    formLightThemeBackground: "#e6eced"
 }
 
 export const TECHSTACKS = [
@@ -37,6 +58,15 @@ export const TECHSTACKS = [
 ];
 
 export const PROJECTLIST = [
+    // {
+    //     title: "Nutri-Scan Application",
+    //     description: `A web-based application designed to help users make informed food
+    //      choices by identifying high-quality food products and detecting potential allergens in purchased meals..`,
+    //     image: "/images/placeholder.webp",
+    //     videoLink: "",
+    //     githubLink: "https://github.com/nbcc-wmad/ssw-project-2024-team-14",
+    //     tags: ["ASP.NET", "Bootstrap", "SQL"]
+    // },
     {
         title: "Real Estate Management System",
         description: `A web application built with ASP.NET to manage a real estate company's operations.

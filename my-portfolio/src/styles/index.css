@@ -2,6 +2,17 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
+  --primary_blue: #6495ed;
+  --primary_blue_contrast: #4b7dd9;
+  --white: #ffffff;
+  --black: #000;
+  --primary_blue_dark: #217898;
+  --primary_blue_dark_shadow: rgba(85, 207, 229, 0.3);
+  --card_darktheme_background: #292c30;
+  --card_darktheme_text: #D1D1D1;
+  --form_lighttheme_background: #e6eced;
+
 }
 body {
   margin: 0;

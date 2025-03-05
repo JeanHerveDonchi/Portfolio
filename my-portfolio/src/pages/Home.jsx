@@ -6,22 +6,16 @@ import Avatar from "../components/avatar";
 const Home = () => {
   return (
     <section
-      style={{
-        minHeight: "calc(100vh - 50px)",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-around",
-      }}
+      className="home-container"
     >
       {/* Left Section (Text + Social Links) */}
-      <div style={{ flex: 1, textAlign: "left" }}>
+      <div className="home-text">
         <Hero />
         <SocialLinks />
       </div>
 
       {/* Right Section (Profile Image) */}
-      <div style={{ flex: 1, display: "flex", justifyContent: "right" }}>
+      <div className="home-avatar">
         <Avatar src="images/profile_image2.png" size={200} />
       </div>
     </section>

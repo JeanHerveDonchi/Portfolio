@@ -6,7 +6,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <nav className={`navbar navbar-expand-lg ${theme === "dark" ? "navbar-dark bg-dark" : "navbar-light bg-transparent"}`}>
+    <nav className={`navbar sticky-top navbar-expand-lg ${theme === "dark" ? "navbar-dark bg-dark" : "navbar-light bg-white"}`}>
       <div className="container">
         {/* Brand */}
         <a className="navbar-brand" href="#">My Portfolio</a>
@@ -37,13 +37,13 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#about">About Me</a>
+              <a className="nav-link" href="#home">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills">Skills</a>
+              <a className="nav-link" href="#about">Skills</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#portfolio">Portfolio</a>
+              <a className="nav-link" href="#projects">Projects</a>
             </li>
             <li className="nav-item">
               <a 
