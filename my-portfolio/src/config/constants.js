@@ -46,15 +46,15 @@ export const COLORS = {
 }
 
 export const TECHSTACKS = [
-    {icon: "/icons/angular.svg", title: "Angular"},
-    {icon: "/icons/dotnet.svg", title: "Asp DotNet"},
-    {icon: "/icons/js.svg", title: "JavaScript"},
-    {icon: "/icons/mongodb.svg", title: "Mongo DB"},
-    {icon: "/icons/nodejs.svg", title: "Node JS"},
-    {icon: "/icons/react.svg", title: "React"},
-    {icon: "/icons/spring_boot.svg", title: "Spring Boot"},
-    {icon: "/icons/sql.svg", title: "SQL"},
-    {icon: "/icons/tailwind.svg", title: "TailWind"},
+    {icon: `${import.meta.env.BASE_URL}icons/angular.svg`, title: "Angular"},
+    {icon: `${import.meta.env.BASE_URL}icons/dotnet.svg`, title: "Asp DotNet"},
+    {icon: `${import.meta.env.BASE_URL}icons/js.svg`, title: "JavaScript"},
+    {icon: `${import.meta.env.BASE_URL}icons/mongodb.svg`, title: "Mongo DB"},
+    {icon: `${import.meta.env.BASE_URL}icons/nodejs.svg`, title: "Node JS"},
+    {icon: `${import.meta.env.BASE_URL}icons/react.svg`, title: "React"},
+    {icon: `${import.meta.env.BASE_URL}icons/spring_boot.svg`, title: "Spring Boot"},
+    {icon: `${import.meta.env.BASE_URL}icons/sql.svg`, title: "SQL"},
+    {icon: `${import.meta.env.BASE_URL}icons/tailwind.svg`, title: "TailWind"},
 ];
 
 export const PROJECTLIST = [
@@ -71,7 +71,7 @@ export const PROJECTLIST = [
         title: "Real Estate Management System",
         description: `A web application built with ASP.NET to manage a real estate company's operations.
          It follows the MVC architecture for server-side rendering and includes ASP.NET authentication and authorization.`,
-        image: "/images/real_estate_site.png",
+        image: `${import.meta.env.BASE_URL}images/real_estate_site.png`,
         videoLink: "https://drive.google.com/file/d/1TDIwT1jZ8s3Dqoee7K5Rg8n20Sj2Gmcc/view?usp=sharing",
         githubLink: "https://github.com/nbcc-wmad/ssw-project-2024-team-14",
         tags: ["ASP.NET", "Bootstrap", "SQL"]
@@ -80,7 +80,7 @@ export const PROJECTLIST = [
         title: "Driving School Management System",
         description: `A WinForms application for managing a driving school's database,
          implementing various business rules and following the N-tier architecture with ORM.`,
-        image: "/images/dsms.png",
+         image: `${import.meta.env.BASE_URL}images/dsms.png`,
         videoLink: "https://drive.google.com/file/d/17etPDLB26wAUAVg_4n9GkzQtQdT0nycc/view?usp=sharing",
         githubLink: "https://github.com/JeanHerveDonchi/Driving_School_Management_System_Project",
         tags: ["WinForms", "SQL", "SSMS", "ADO.NET"]
@@ -88,7 +88,7 @@ export const PROJECTLIST = [
     {
         title: "Check-Games Card Game",
         description: "A comprehensive UNO-like card game for Windows, utilizing OOP to implement business rules.",
-        image: "/images/check_games.png",
+        image: `${import.meta.env.BASE_URL}images/check_games.png`,
         videoLink: "https://drive.google.com/file/d/1UcDazE-fviLLREc_-4LtdSqD4hlT8y_Q/view?usp=sharing",
         githubLink: "https://github.com/JeanHerveDonchi/card_game_project",
         tags: ["WinForms", "C#"]
