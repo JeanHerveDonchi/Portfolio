@@ -71,7 +71,7 @@ export const PROJECTLIST = [
         title: "Real Estate Management System",
         description: `A web application built with ASP.NET to manage a real estate company's operations.
          It follows the MVC architecture for server-side rendering and includes ASP.NET authentication and authorization.`,
-        image: "/images/placeholder.webp",
+        image: "/images/real_estate_site.png",
         videoLink: "https://drive.google.com/file/d/1TDIwT1jZ8s3Dqoee7K5Rg8n20Sj2Gmcc/view?usp=sharing",
         githubLink: "https://github.com/nbcc-wmad/ssw-project-2024-team-14",
         tags: ["ASP.NET", "Bootstrap", "SQL"]
@@ -80,7 +80,7 @@ export const PROJECTLIST = [
         title: "Driving School Management System",
         description: `A WinForms application for managing a driving school's database,
          implementing various business rules and following the N-tier architecture with ORM.`,
-        image: "/images/placeholder.webp",
+        image: "/images/dsms.png",
         videoLink: "https://drive.google.com/file/d/17etPDLB26wAUAVg_4n9GkzQtQdT0nycc/view?usp=sharing",
         githubLink: "https://github.com/JeanHerveDonchi/Driving_School_Management_System_Project",
         tags: ["WinForms", "SQL", "SSMS", "ADO.NET"]
@@ -88,9 +88,9 @@ export const PROJECTLIST = [
     {
         title: "Check-Games Card Game",
         description: "A comprehensive UNO-like card game for Windows, utilizing OOP to implement business rules.",
-        image: "/images/placeholder.webp",
+        image: "/images/check_games.png",
         videoLink: "https://drive.google.com/file/d/1UcDazE-fviLLREc_-4LtdSqD4hlT8y_Q/view?usp=sharing",
-        githubLink: "https://github.com/PROG1311-OOP/project-card-game-JeanHerveDonchi/tree/68c7354c1ed9482252816457a419ba3cf1f76800",
+        githubLink: "https://github.com/JeanHerveDonchi/card_game_project",
         tags: ["WinForms", "C#"]
     }
 ]
