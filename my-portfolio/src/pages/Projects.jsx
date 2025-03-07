@@ -4,7 +4,7 @@ import ProjectCard from "../components/projectCard";
 
 const Projects = ({ projects }) => {
     return (
-        <div className="container py-5">
+        <div id="projects" className="container py-5">
             <Text variant="h1">My Projects</Text>
             <Text>I believe in proof of work, Here are my popular works. With their respective Tech Stack.</Text>
             <div className="row mt-4">

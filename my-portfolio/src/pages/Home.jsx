@@ -5,7 +5,7 @@ import Avatar from "../components/avatar";
 
 const Home = () => {
   return (
-    <section
+    <section id="home"
       className="home-container"
     >
       {/* Left Section (Text + Social Links) */}

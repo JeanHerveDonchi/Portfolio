@@ -22,7 +22,7 @@ const AboutMe = () => {
     }
 
     return (
-        <section className="about-container">
+        <section id="about" className="about-container">
           <div className="about-content">
             {/* Left Section (Text & Tech Stack) */}
             <div className="about-text">

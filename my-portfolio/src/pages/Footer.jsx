@@ -20,18 +20,38 @@ const Footer = () => {
                 justifyContent: "center",
                 textAlign: "center"
             }}>
-                {FOOTERLINKS.map((link, index) => (
-                    <a key={index} href={link.url} style={{
-                        fontSize: "14px",
-                        color: darkMode ? "var(--white)" : "var(--black)",
-                        textDecoration: "none",
-                        transition: "color 0.3s",
-                    }}
-                        onMouseOver={(e) => e.target.style.color = "var(--primary_blue)"}
-                        onMouseOut={(e) => e.target.style.color = darkMode ? "var(--white)" : "var(--black)"}>
-                        {link.name}
-                    </a>
-                ))}
+                {FOOTERLINKS.map((link, index) => 
+                    link.newPage ? 
+                        (   
+                            <a key={index} href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="External Link"
+                            style={{
+                                fontSize: "14px",
+                                color: darkMode ? "var(--white)" : "var(--black)",
+                                textDecoration: "none",
+                                transition: "color 0.3s",
+                            }}
+                                onMouseOver={(e) => e.target.style.color = "var(--primary_blue)"}
+                                onMouseOut={(e) => e.target.style.color = darkMode ? "var(--white)" : "var(--black)"}>
+                                {link.name}
+                            </a>
+                        ) : (
+                        <a key={index} href={link.url}
+                        style={{
+                            fontSize: "14px",
+                            color: darkMode ? "var(--white)" : "var(--black)",
+                            textDecoration: "none",
+                            transition: "color 0.3s",
+                        }}
+                            onMouseOver={(e) => e.target.style.color = "var(--primary_blue)"}
+                            onMouseOut={(e) => e.target.style.color = darkMode ? "var(--white)" : "var(--black)"}>
+                            {link.name}
+                        </a>
+                        )
+                
+               )}
             </div>
             <hr style={{
                 margin: "20px auto",

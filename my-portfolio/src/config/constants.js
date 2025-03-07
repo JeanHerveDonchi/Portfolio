@@ -19,13 +19,13 @@ export const LINKS = {
 }
 
 export const FOOTERLINKS = [
-    { name: "Home", url: "#home" },
-    { name: "About", url: "#about" },
-    { name: "Projects", url: "#projects" },
-    { name: "Contact Me", url: "#contact" },
-    { name: "LinkedIn", url: LINKS.linkedIn },
-    { name: "Email", url: LINKS.email },
-    { name: "GitHub", url: LINKS.github }
+    { name: "Home", url: "#home", newPage: false },
+    { name: "About", url: "#about", newPage: false },
+    { name: "Projects", url: "#projects", newPage: false },
+    { name: "Contact Me", url: "#contact", newPage: false },
+    { name: "LinkedIn", url: LINKS.linkedIn, newPage: true },
+    { name: "Email", url: LINKS.email, newPage: true },
+    { name: "GitHub", url: LINKS.github, newPage: true }
 ]
 
 export const EMAILJSCREDENTIALS = {

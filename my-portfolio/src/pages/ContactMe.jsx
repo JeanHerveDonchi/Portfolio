@@ -46,7 +46,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="contact-container">
+        <section id="contact" className="contact-container">
             {isSubmitted && (
                 <div className="popup-message">
                     <p>✅ Your message has been sent successfully! I’ll get back to you as soon as possible.</p>
