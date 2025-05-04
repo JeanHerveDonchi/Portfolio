@@ -68,12 +68,21 @@ export const PROJECTLIST = [
     //     tags: ["ASP.NET", "Bootstrap", "SQL"]
     // },
     {
+        title: "Restaurant Management System",
+        description: `A web application built with Spring Boot and Bootstrap to manage a pop up restaurant operations.
+         It follows the N-Tier architecture for server-side rendering and includes Spring authentication, authorization and Email.`,
+        image: `${import.meta.env.BASE_URL}images/popup-restaurant.png`,
+        videoLink: "https://drive.google.com/file/d/13B6deOMrLh89pUpoa34RUG36X0eofcro/view?usp=sharing",
+        githubLink: "",
+        tags: ["Spring Boot", "Bootstrap", "MySQL"]
+    },
+    {
         title: "Real Estate Management System",
         description: `A web application built with ASP.NET to manage a real estate company's operations.
          It follows the MVC architecture for server-side rendering and includes ASP.NET authentication and authorization.`,
         image: `${import.meta.env.BASE_URL}images/real_estate_site.png`,
         videoLink: "https://drive.google.com/file/d/1TDIwT1jZ8s3Dqoee7K5Rg8n20Sj2Gmcc/view?usp=sharing",
-        githubLink: "https://github.com/nbcc-wmad/ssw-project-2024-team-14",
+        githubLink: "",
         tags: ["ASP.NET", "Bootstrap", "SQL"]
     },
     {
